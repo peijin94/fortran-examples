@@ -33,4 +33,5 @@ gfortran ../subroutines/typedef.f90 ../subroutines/integrate.f90 hw_9_1.f90
 
 ### subroutines(modules)
  - integrate.f90     积分常用函数（函数模块）
- - typedef.f90       定义类型和常数 (定义模块)
+ - typedef.f90       定义类型和常数 （定义模块）
+ - zerosolve.f90     函数求零点模块（函数模块）
