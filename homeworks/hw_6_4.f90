@@ -23,7 +23,7 @@
     end do
     
     
-    end program Console64
+    end program hw_6_4
     
     subroutine break(a,n)   !break subroutine
     integer n,a(1:10),i,j,prime
