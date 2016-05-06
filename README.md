@@ -47,7 +47,7 @@ gfortran ../subroutines/typedef.f90 ../subroutines/integrate.f90 hw_9_1.f90
  - zerosolve.f90     函数求零点模块（函数模块）
  - sortreal.f90      排序模块（希尔排序，选择排序）
 
-![De_javu f90](http://github.com/Pjer-zhang/fortran-examples/image/web.png)
+![](https://github.com/Pjer-zhang/fortran-examples/blob/master/image/web.png)
 
 [My profile](http://home.ustc.edu.cn/~pjer1316)
 [My blog](http://pjer.blog.ustc.edu.cn)
