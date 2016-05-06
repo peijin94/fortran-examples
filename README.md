@@ -15,6 +15,24 @@ gfortran $(module_name).f90 main.f90
 ```bash
 gfortran ../subroutines/typedef.f90 ../subroutines/integrate.f90 hw_9_1.f90
 ```
+###关于python中的fortran
+可以把fortran程序编译成链接库，在python中使用import $(module_name)引用之后使用，bash中使用f2py命令进行编译
+```bash
+f2py -c -m $(module_name).py
+
+```
+一个小demo：
+```python
+#/usr/bin/env python
+
+import numpy as np
+import inte  #fortran compiled module
+x=np.arange(2,3,0.01)
+fx=np.sin(x)*np.exp(x)
+print inte.simp_inte(fx,2,3) #inte 里的 simpson 积分函数
+
+```
+
 ## files
 ### homework
  - hw_2_3.f90 逻辑运算符运算
@@ -40,6 +58,9 @@ gfortran ../subroutines/typedef.f90 ../subroutines/integrate.f90 hw_9_1.f90
  - matrix.txt 矩阵操作（5.2）的数据文件
  - insert.txt 顺序插入（8.2）的数据文件
 
+### python bridge
+ - inte_lib_py.f90  适用于python调用的积分常用函数
+ - integrate.py     使用python调用fortran编译的链接库（demo）
 
 ### subroutines(modules)
  - integrate.f90     积分常用函数（函数模块）
