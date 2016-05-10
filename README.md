@@ -54,6 +54,7 @@ print inte.simp_inte(fx,2,3) #inte 里的 simpson 积分函数
  - hw_8_2.f90 文件中顺序插入
  - hw_9_1.f90 数值积分(use module)
  - hw_9_2.f90 函数求零点(use module)
+ - hw_9_3.f90 拉格朗日插值(use module)
  - hw_10_.f90 hash表散列搜索
  - matrix.txt 矩阵操作（5.2）的数据文件
  - insert.txt 顺序插入（8.2）的数据文件
@@ -63,6 +64,7 @@ print inte.simp_inte(fx,2,3) #inte 里的 simpson 积分函数
  - integrate.py     使用python调用fortran编译的链接库（demo）
 
 ### subroutines(modules)
+ - interp.f90        插值函数（拉格朗日插值）
  - integrate.f90     积分常用函数（函数模块）
  - typedef.f90       定义类型和常数 （定义模块）
  - zerosolve.f90     函数求零点模块（函数模块）
