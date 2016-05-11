@@ -17,7 +17,7 @@
                 print*,"all number satisfy"
             else
                 print*,"no number satisfy"
-            end if3
+            end if
         else
             print*,"x=",-real(c)/b
         end if
