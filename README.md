@@ -15,6 +15,21 @@ gfortran $(module_name).f90 main.f90
 ```bash
 gfortran ../subroutines/typedef.f90 ../subroutines/integrate.f90 hw_9_1.f90
 ```
+
+###usage
+新增Makefile之后，可以批量编译，上一步完成之后可以在project的根目录上输入
+```bash
+make
+```
+默认不加参数的情况下是编译已经写入makefile里的所有文件
+
+当然也可以只编译某一次作业，可以在make后面加参数
+```bash
+make hw23 
+```
+编译作业hw_2_3.f90，在makefile里已经解决了依赖关系，所以在用make编译执行编译命令的时候不用再考虑module之间的依赖关系
+
+
 ###关于python中的fortran
 可以把fortran程序编译成链接库，在python中使用import $(module_name)引用之后使用，bash中使用f2py命令进行编译
 ```bash
@@ -34,6 +49,9 @@ print inte.simp_inte(fx,2,3) #inte 里的 simpson 积分函数
 ```
 
 ## files
+### compile control
+ - Makefile  管理编译命令的文件
+
 ### homework
  - hw_2_3.f90 逻辑运算符运算
  - hw_2_4.f90 二元一次方程求解
